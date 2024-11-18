@@ -1,33 +1,20 @@
 <!DOCTYPE html>
+<!-- https://github.com/breakcomputer/projet_site_web.git -->
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de Bord</title>
+    <title>Graphique Interactif</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Tableau de Bord Interactif</h1>
+        <h1>Population par Pays - Graphique</h1>
+        <input type="text" id="searchBar" placeholder="Rechercher un pays..." />
     </header>
     <main>
-        <section id="stats">
-            <div class="card">
-                <h2>Total des Ventes</h2>
-                <p id="total-sales">0</p>
-            </div>
-            <div class="card">
-                <h2>Clients Actifs</h2>
-                <p id="active-clients">0</p>
-            </div>
-            <div class="card">
-                <h2>Taux de Conversion</h2>
-                <p id="conversion-rate">0%</p>
-            </div>
-        </section>
-        <section id="chart">
-            <canvas id="salesChart"></canvas>
-        </section>
+        <canvas id="populationChart"></canvas>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
