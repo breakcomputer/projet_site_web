@@ -7,38 +7,30 @@ body {
 }
 
 header {
+    text-align: center;
+    padding: 1rem;
     background-color: #4CAF50;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
+}
+
+header input {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 main {
     padding: 2rem;
-}
-
-#stats {
     display: flex;
-    gap: 1rem;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-}
-
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    flex: 1;
-}
-
-#chart {
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {
+    max-width: 100%;
+    height: auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
